@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div id="root">
+      <div class="app">
+        <header class="header">
+          <img
+            class="header__image"
+            src="./images/note.png"
+            alt="shopping list logo"
+          />
+          <h1 class="header__text">Shopping List</h1>
+        </header>
+        <main class="main">
+          <form class="form__item">
+            <input
+              id="itemInput"
+              type="text"
+              name="item"
+              placeholder="Enter Item"
+            />
+            <button class="item__addBtn" type="submit">
+              <span>+</span><span>Add Item</span>
+            </button>
+          </form>
+          <div class="filters">
+            <input id="filters__input" type="text" placeholder="Filter Items" />
+          </div>
+          <ul class="itemsList"></ul>
+          <button class="clearBtn">Clear All</button>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
